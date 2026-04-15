@@ -1,0 +1,27 @@
+body {
+    background-color: orange;
+    color: red;
+}
+
+.menu-principal {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
