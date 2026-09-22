@@ -1,27 +1,89 @@
-body {
-    background-color: orange;
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-image: url('img/usar esse.jpg'); /* Linha 9 corrigida */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo da barra de navegação */
 .menu-principal {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
 }
 
 .menu-principal ul {
-    list-style: none;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
 }
 
 .menu-principal a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+/* Centralização do formulário */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    outline: none;
+}
+
+/* O texto do placeholder some automaticamente ao digitar */
+.login-form input::placeholder {
+    color: #666;
+}
+
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #003d80;
 }
